@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador js</title>
+<link rel="stylesheet" href="actividad.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid ">
+          <a class="navbar-brand p-3 " href="#">
+            
+            Conf Bs As
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="nav justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Conviértete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-success active " href="#">Comprar tickets</a>
+          </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <div class="container">
+    <div class="mx-5">
+    <div class="row row-cols-1 row-cols-md-3  g-4">
+      <div class="col">
+        <div class="card border-primary h-100 p-2">
+         
+          <div class="card-body text-center">
+            <br>
+            <h4 class="card-title fw-semibold">Estudiante</h4>
+            <p class="card-text fs-4">Tienen un descuento</p>
+            <h4 class="card-title fw-bold">80%</h4>
+            <p class="card-text text-muted fs-6">*presentar documentación</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success h-100 p-2">
+         
+          <div class="card-body text-center">
+            <br>
+            <h4 class="card-title fw-semibold">Trainee</h4>
+            <p class="card-text fs-4">Tienen un descuento</p>
+            <h4 class="card-title fw-bold">50%</h4>
+            <p class="card-text text-muted fs-6">*presentar documentación</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning h-100 p-2">
+        
+          <div class="card-body text-center">
+            <br>
+            <h4 class="card-title fw-semibold">Junior</h4>
+            <p class="card-text fs-4">Tienen un descuento</p>
+            <h4 class="card-title fw-bold">15%</h4>
+            <p class="card-text text-muted fs-6">*presentar documentación</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+<div class="text fs-5 text-center"> VENTA</div>
+<div class="text fs-1 text-center fw-semibold">VALOR DE TICKET $200</div>
+
+<br>
+<form action="#" method="post">
+<div class="row g-3 mx-5 mb-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Nombre" >
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Apellido">
+  </div>
+  <div class="col-12">
+    
+    <input type="email" class="form-control" placeholder="Correo">
+
+  </div>
+ <div class="col-md-6">
+    <label for="input" class="form-label">Cantidad</label>
+    <input type="number" class="form-control" id="cantidad" onkeyup="calcTotal()" placeholder="Cantidad">
+  </div>
+  <div class="col-md-6">
+    <label for="input" class="form-label">Categoría</label>
+    <select class="form-select" id="categoria" onchange="calcTotal()">
+      
+      <option value="1">Estudiante</option>
+      <option value="2">Trainee</option>
+      <option value="3">Junior</option>
+    </select>
+    
+  </div>
+ <br>
+ <div class="row m-3 text-center">
+  <div class="col-md">
+    <div id="total" class=" p-2 bajo " >
+      Total a Pagar: $
+
+
+    </div>
+  </div>
+ </div>
+  
+</div>
+
+</form>
+<div class="col text-center "> 
+<button type="button" class="btn btn-success px-5">Borrar</button>
+<button type="button" class="btn btn-success px-5">Resumen</button>
+
+ 
+</div>
+
+
+
+</div>
+<br>
+<br>
+<footer>
+  <div class="container-fluid text-light alto p-4">
+   <div class="d-flex  justify-content-between  text-white" >
+      <div class="">Preguntas<br>frecuentes</div>
+      <div class="p-2">Contáctanos</div>
+      <div class="p-2">Prensa</div>
+      <div class="p-2">Conferencias</div>
+      <div class="text-center">Términos <br> y condiciones</div>
+      <div class="p-2">Privacidad</div>
+      <div class="p-2">Estudiantes</div>
+  </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="actividad.js"></script> 
+</body>
+</html>
