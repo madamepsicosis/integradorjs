@@ -11,11 +11,11 @@ function calcTotal(){
 
     let total=0
     if (categoria==1) {
-        total=cantidad*ticket*.2 
+        total=cantidad*ticket*.2 //80%
     } else if (categoria==2) {
-        total=cantidad*ticket*.5 
+        total=cantidad*ticket*.5 //50%
     } else {
-        total=cantidad*ticket*.85 
+        total=cantidad*ticket*.85 //15%
     }
 
     document.getElementById("total").innerHTML=`Total a pagar: $${total}`
